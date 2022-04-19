@@ -7,29 +7,13 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://kit.fontawesome.com/3bff603bb2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Your World</title>
+    <title>Vikini</title>
     <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js" async
         integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx" crossorigin="anonymous">
     </script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyAGLZPuTgY7g0gcI3o-bUHvlJYQA6KHUw4",
-            authDomain: "shop-5251d.firebaseapp.com",
-            projectId: "shop-5251d",
-            storageBucket: "shop-5251d.appspot.com",
-            messagingSenderId: "966882409996",
-            appId: "1:966882409996:web:62e3a3855a28b6f9db3829"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-    </script>
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -209,7 +193,11 @@
                             <div class="product-price font-bold text-gray-700 text-lg">
                                 $299.99
                             </div>
+                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex items-center justify-center rounded text-white text-md cursor-pointer hover:bg-yellow-600 mt-2">
+                                Add to Cart
+                            </div>
                         </div>
+
                         <div class="main-product ml-5">
                             <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
                                 <img class="w-full h-full object-contain" src="https://www.tradeinn.com/f/13759/137594177/tcl-10l-64gb-6gb-6.47-smartphone.jpg" alt="smartphones">
@@ -226,7 +214,11 @@
                             <div class="product-price font-bold text-gray-700 text-lg">
                                 $299.99
                             </div>
+                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex items-center justify-center rounded text-white text-md cursor-pointer hover:bg-yellow-600 mt-2">
+                                Add to Cart
+                            </div>
                         </div>
+
                         <div class="main-product ml-5">
                             <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
                                 <img class="w-full h-full object-contain" src="https://www.tradeinn.com/f/13759/137594177/tcl-10l-64gb-6gb-6.47-smartphone.jpg" alt="smartphones">
@@ -243,7 +235,11 @@
                             <div class="product-price font-bold text-gray-700 text-lg">
                                 $299.99
                             </div>
+                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex items-center justify-center rounded text-white text-md cursor-pointer hover:bg-yellow-600 mt-2">
+                                Add to Cart
+                            </div>
                         </div>
+
                         <div class="main-product ml-5">
                             <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
                                 <img class="w-full h-full object-contain" src="https://www.tradeinn.com/f/13759/137594177/tcl-10l-64gb-6gb-6.47-smartphone.jpg" alt="smartphones">
@@ -259,6 +255,9 @@
                             </div>
                             <div class="product-price font-bold text-gray-700 text-lg">
                                 $299.99
+                            </div>
+                            <div class="add-to-cart h-8 w-28 bg-yellow-500 flex items-center justify-center rounded text-white text-md cursor-pointer hover:bg-yellow-600 mt-2">
+                                Add to Cart
                             </div>
                         </div>
                     </div>
@@ -266,5 +265,25 @@
             </div>
         </div>
     </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAGLZPuTgY7g0gcI3o-bUHvlJYQA6KHUw4",
+            authDomain: "shop-5251d.firebaseapp.com",
+            projectId: "shop-5251d",
+            storageBucket: "shop-5251d.appspot.com",
+            messagingSenderId: "966882409996",
+            appId: "1:966882409996:web:62e3a3855a28b6f9db3829"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>
